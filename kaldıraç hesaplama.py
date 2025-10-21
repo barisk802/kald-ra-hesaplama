@@ -3,9 +3,6 @@ import streamlit as st
 st.title(" Kaldıraç Kâr/Zarar Hesaplama")
 
 
-1- Long
-2- Short
-
 işlem_türü_sec = st.radio("İşlem Türü Seçiniz:", ["Long", "Short"])
 
 
@@ -43,6 +40,7 @@ if kar_zarar is not None:
         print("Zararınız: -{:.2f}".format(abs(kar_zarar)))
     else:
         print("Ne kâr ne zarar, işlem eşit!")
+
 
 
 
