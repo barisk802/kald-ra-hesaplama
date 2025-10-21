@@ -1,5 +1,6 @@
-print("""
-Kaldıraç kazan/kayıp hesaplama
+import streamlit as st
+
+st.title(" Kaldıraç Kâr/Zarar Hesaplama")
 
 İşlemler:
 
@@ -41,3 +42,4 @@ if kar_zarar is not None:
         print("Zararınız: -{:.2f}".format(abs(kar_zarar)))
     else:
         print("Ne kâr ne zarar, işlem eşit!")
+
